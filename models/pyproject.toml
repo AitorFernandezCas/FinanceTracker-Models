@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "finance-tracker-models"
+version = "0.1.0"
+description = "Shared SQLAlchemy models for Finance Tracker projects"
+readme = "README.md"
+requires-python = ">=3.9"
+keywords = ["finance", "sqlalchemy", "models", "shared"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Intended Audience :: Developers",
+]
+
+dependencies = [
+    "sqlalchemy>=2.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "pytest-cov>=3.0",
+    "black>=22.0",
+    "isort>=5.0",
+    "flake8>=4.0",
+]
+
+[project.urls]
+Repository = "https://github.com/yourusername/finance-tracker-models"
+Issues = "https://github.com/yourusername/finance-tracker-models/issues"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["models*"]
