@@ -6,5 +6,6 @@ class MaestroActivosFinancieros(Base):
     __tablename__ = 'maestro_activos_financieros'
 
     isin = Column(String(255), primary_key=True)
+    producto = Column(String(255))
     id_tipo_instrumento = Column(String(255), nullable=False)
     created_at = Column(DateTime, default=datetime.utcnow)
