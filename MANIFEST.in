@@ -1,4 +1,0 @@
-recursive-include models *.py
-include README.md
-include pyproject.toml
-include LICENSE
