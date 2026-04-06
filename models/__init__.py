@@ -6,6 +6,7 @@ from .base import Base
 from .deudas import Deudas
 from .inmuebles import Inmuebles
 from .liquidez import Liquidez
+from .movimientos_bancos import MovimientosBancos
 from .hist_compra_instrumentos_financieros import HistCompraInstrumentosFinancieros
 from .master.maestro_activos_financieros import MaestroActivosFinancieros
 from .master.maestro_bancos import MaestroBancos
@@ -20,4 +21,5 @@ __all__ = [
     'MaestroActivosFinancieros',
     'MaestroBancos',
     'MaestroDivisas',
+    'MovimientosBancos',
 ]
