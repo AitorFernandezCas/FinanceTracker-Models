@@ -9,4 +9,5 @@ class MovimientosBancos(Base):
     concepto = Column(String(255), nullable=False)
     categoria = Column(String(255), nullable=True)
     importe = Column(Float, nullable=False)
+    saldo = Column(Float, nullable=False)
     created_at = Column(DateTime, default=datetime.utcnow)
